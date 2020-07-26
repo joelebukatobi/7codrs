@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Overpass:wght@200;300;400&display=swap");
+
+/*
+  Color Variables
+  ---------------
+*/
+$color-primary: #171019;
+$color-secondary: #1f4483;
+$color-secondary-light: #fafdff;
+$color-tertiary: #ac3b61;
+$color-tertiary-dark: #545689;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+/*
+  Font Variables
+  --------------
+*/
+
+$font-primary: "Overpass", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+/* 
+  Mixins 
+  ------
+*/
+
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+
+/*
+  Main
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: $color-black;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+}
+
+body {
+  font-family: $font-primary;
+  // color: ;
+  font: weight;
+  line-height: 1.6;
+}
