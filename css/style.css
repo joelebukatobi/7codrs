@@ -1970,8 +1970,7 @@ body {
   border: none; }
 
 .header {
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
   background: linear-gradient(165.6deg, #1f4483 0%, rgba(70, 66, 122, 0.874727) 81.46%, rgba(172, 59, 97, 0.541667) 157.26%, rgba(233, 236, 243, 0) 257.14%); }
 
 .btn {
@@ -2107,7 +2106,7 @@ body {
     .header__contact__text li {
       list-style: none;
       font-size: 1.8rem;
-      font-weight: 200; }
+      font-weight: 300; }
       .header__contact__text li:not(:last-child) {
         margin-bottom: 1.6rem; }
       .header__contact__text li svg {
@@ -2145,6 +2144,27 @@ body {
         background-color: #ac3b61;
         width: 13rem;
         text-transform: uppercase; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .header__contact {
+        top: 10rem;
+        padding: 2.4rem;
+        flex-direction: column; }
+        .header__contact__text {
+          width: inherit; }
+          .header__contact__text .paragraph {
+            width: 100%;
+            margin-bottom: 0.8rem; }
+          .header__contact__text li {
+            font-size: 1.6rem; }
+            .header__contact__text li:not(:last-child) {
+              margin-bottom: 0.8rem; }
+        .header__contact__image {
+          display: none; }
+        .header__contact__form {
+          width: 100%;
+          margin-top: 2.4rem; }
+          .header__contact__form .btn {
+            width: 100%; } }
 
 .about {
   display: flex;

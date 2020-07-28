@@ -175,7 +175,7 @@
       & li {
         list-style: none;
         font-size: 1.8rem;
-        font-weight: 200;
+        font-weight: 300;
         &:not(:last-child) {
           margin-bottom: 1.6rem;
         }
@@ -224,6 +224,35 @@
         background-color: $color-tertiary;
         width: 13rem;
         text-transform: uppercase;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 576px) {
+      top: 10rem;
+      padding: 2.4rem;
+      flex-direction: column;
+      &__text {
+        width: inherit;
+        & .paragraph {
+          width: 100%;
+          margin-bottom: 0.8rem;
+        }
+        & li {
+          font-size: 1.6rem;
+          &:not(:last-child) {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+      &__image {
+        display: none;
+      }
+      &__form {
+        width: 100%;
+        margin-top: 2.4rem;
+        & .btn {
+          width: 100%;
+        }
       }
     }
   }
