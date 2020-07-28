@@ -1970,7 +1970,8 @@ body {
   border: none; }
 
 .header {
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
   background: linear-gradient(165.6deg, #1f4483 0%, rgba(70, 66, 122, 0.874727) 81.46%, rgba(172, 59, 97, 0.541667) 157.26%, rgba(233, 236, 243, 0) 257.14%); }
 
 .btn {
@@ -2039,7 +2040,8 @@ body {
     position: relative; }
     .header__landing img:first-child {
       position: absolute;
-      top: 50rem; }
+      top: 50rem;
+      left: -10rem; }
     .header__landing img:nth-child(2) {
       position: absolute;
       left: 120.2rem;
