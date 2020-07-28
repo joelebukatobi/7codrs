@@ -1966,7 +1966,8 @@ body {
     background-color: #1f4483; } }
 
 .navbar-dark .navbar-toggler {
-  z-index: 5; }
+  z-index: 5;
+  border: none; }
 
 .header {
   overflow: hidden;
@@ -2008,7 +2009,8 @@ body {
       .header__text {
         width: inherit;
         padding: 2.4rem;
-        bottom: 15rem; }
+        bottom: 15rem;
+        z-index: 3; }
         .header__text .paragraph,
         .header__text .heading-2 {
           width: 100%; } }
@@ -2025,7 +2027,8 @@ body {
         padding: 2.4rem;
         right: 0;
         left: 20rem;
-        top: 50rem; } }
+        top: 50rem;
+        z-index: 1; } }
     .header__image img {
       height: 55rem;
       width: 55rem; }
@@ -2199,7 +2202,7 @@ body {
     .workflow__services__card {
       position: relative;
       background-color: #ffffff;
-      box-shadow: 0px 4px 20px rgba(186, 186, 186, 0.25);
+      box-shadow: 0px 4px 20px rgba(114, 114, 114, 0.25);
       height: 45rem;
       width: 40rem;
       padding: 6.4rem 2.4rem; }
@@ -2509,7 +2512,7 @@ body {
       .footer__col__form__group input {
         width: 80%;
         height: 4rem;
-        border: 0.15rem solid #1f4483;
+        border: 0.12rem solid #1f4483;
         border-radius: 0.5rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -2522,7 +2525,7 @@ body {
         position: absolute;
         height: 4rem;
         width: 20%;
-        border: 0.15rem solid #1f4483;
+        border: 0.12rem solid #1f4483;
         border-radius: 0.5rem;
         background: transparent;
         border-top-left-radius: 0;
@@ -2568,7 +2571,7 @@ body {
 
 .paragraph {
   font-family: "Overpass", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.8rem;
   line-height: 3.2rem; }
   @media (min-width: 320px) and (max-width: 576px) {
