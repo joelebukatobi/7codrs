@@ -6,21 +6,88 @@
   padding-left: 4rem;
   padding-right: 4rem;
   z-index: 5;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
 }
 
 .navbar-nav {
   margin-left: auto;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: $color-white;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 200;
+  padding-bottom: 0.5rem;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding-bottom: 0rem;
+    font-size: 1.8rem;
+  }
+  &:hover {
+    color: $color-white;
+    border-bottom: 0.15rem solid $color-white;
+
+    @media (min-width: 320px) and (max-width: 576px) {
+      border-bottom: none;
+    }
+  }
+}
+
+.nav-link {
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.active {
+  color: $color-white;
+  border-bottom: 0.15rem solid $color-white;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    border-bottom: none;
+  }
+}
+
+.nav-item {
+  @media (min-width: 320px) and (max-width: 576px) {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .nav-item:not(:last-child) {
   margin-right: 4rem;
+}
+
+.navbar-brand {
+  // position: absolute;
+  z-index: 5;
+}
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.navbar-collapse {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  padding: 12.4rem 2.4rem 0 2.4rem;
+  top: 0;
+  left: 0;
+  background-color: $color-secondary;
+}
+
+.navbar-dark .navbar-toggler {
+  z-index: 5;
 }
 
 .header {

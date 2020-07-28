@@ -6,7 +6,7 @@
 */
 $color-primary: #171019;
 $color-secondary: #1f4483;
-$color-secondary-light: #fafdff;
+$color-secondary-light: #e4f4ff;
 $color-tertiary: #ac3b61;
 $color-tertiary-dark: #545689;
 
@@ -72,6 +72,9 @@ button:active {
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% 1rem
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 50%;
+  }
 }
 
 body {

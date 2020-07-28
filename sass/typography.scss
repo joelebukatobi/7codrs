@@ -3,12 +3,20 @@
   font-weight: 600;
   font-size: 5rem;
   line-height: 6.8rem;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 3.7rem;
+  }
 }
 .heading-2 {
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 3.7rem;
   line-height: 5rem;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 2.8rem;
+  }
 }
 
 .heading-4 {
@@ -16,10 +24,18 @@
   font-weight: 300;
   font-size: 2.8rem;
   line-height: 50px;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 2.1rem;
+  }
 }
 .paragraph {
   font-family: $font-primary;
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 3.2rem;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 1.6rem;
+  }
 }
