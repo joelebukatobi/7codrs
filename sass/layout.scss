@@ -104,4 +104,9 @@
     rgba(172, 59, 97, 0.541667) 157.26%,
     rgba(233, 236, 243, 0) 257.14%
   );
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    overflow-y: auto;
+    height: 100vh;
+  }
 }

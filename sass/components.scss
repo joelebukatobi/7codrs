@@ -39,13 +39,18 @@
     @media (min-width: 320px) and (max-width: 576px) {
       width: inherit;
       padding: 2.4rem;
-      bottom: 15rem;
+      bottom: 5rem;
       z-index: 3;
       & .paragraph,
       & .heading-2 {
         width: 100%;
       }
     }
+
+    @media (min-width: 375px) and (max-width: 576px) {
+      bottom: 10rem;
+    }
+
     & p {
       width: 52.7rem;
     }
@@ -58,22 +63,33 @@
   &__image {
     position: absolute;
     right: 20rem;
-    top: 10rem;
+    margin-top: 15rem;
 
     @media (min-width: 320px) and (max-width: 576px) {
-      padding: 2.4rem;
+      margin-top: 0;
+      padding: 0 2.4rem;
       right: 0;
-      left: 20rem;
-      top: 50rem;
+      left: 0;
+      bottom: 23rem;
       z-index: 1;
+      height: 40rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 576px) {
+      bottom: 35rem;
     }
 
     & img {
       height: 55rem;
       width: 55rem;
-      @media (min-width: 320px) and (max-width: 576px) {
+      @media (min-width: 375px) and (max-width: 576px) {
         height: 40rem;
         width: 40rem;
+      }
+
+      @media (min-width: 320px) and (max-width: 360px) {
+        height: 35rem;
+        width: 35rem;
       }
     }
   }
@@ -81,7 +97,6 @@
   // Landing Header
   &__landing {
     position: relative;
-
     & img:first-child {
       position: absolute;
       top: 50rem;
@@ -184,7 +199,7 @@
           height: 5rem;
           width: 5rem;
           margin-right: 1.6rem;
-          fill: $color-white;
+          stroke: $color-white;
         }
       }
     }
@@ -236,12 +251,16 @@
         width: inherit;
         & .paragraph {
           width: 100%;
-          margin-bottom: 0.8rem;
+          margin-bottom: 1.6rem;
         }
         & li {
           font-size: 1.6rem;
           &:not(:last-child) {
-            margin-bottom: 0.8rem;
+            margin-top: 1.6rem;
+          }
+          & svg {
+            height: 3.5rem;
+            width: 3.5rem;
           }
         }
       }
@@ -447,7 +466,7 @@
       display: flex;
       flex-direction: column;
       width: 37.6rem;
-      box-shadow: 0px 4px 20px rgba(224, 224, 224, 0.25);
+      box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.1);
       @media (min-width: 320px) and (max-width: 576px) {
         width: 98%;
         margin-bottom: 4.8rem;
@@ -483,6 +502,7 @@
   margin: 10rem 10rem 0 0;
   &__main {
     display: flex;
+    // width: inherit;
     &__text {
       padding-top: 13rem;
       color: $color-white;
@@ -492,6 +512,13 @@
       & .btn {
         background-color: $color-white;
         color: $color-tertiary-dark;
+      }
+    }
+    &__images {
+      @media (min-width: 320px) and (max-width: 360px) {
+        & img {
+          width: 10rem !important;
+        }
       }
     }
   }
@@ -663,6 +690,10 @@
 // Web
 .web {
   margin: 10rem 10rem 0 10rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    margin: 0;
+    padding: 5.6rem 2.4rem;
+  }
   &__main {
     margin-bottom: 4.8rem;
     & p {

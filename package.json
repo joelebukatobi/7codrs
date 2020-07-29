@@ -7,6 +7,7 @@
     "live-server": "^1.2.1"
   },
   "devDependencies": {
+    "aos": "^2.3.4",
     "auto-prefixer": "^0.4.2",
     "bootstrap": "^4.5.0",
     "node-sass": "^4.14.1",
